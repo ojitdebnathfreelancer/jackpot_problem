@@ -1,0 +1,57 @@
+@import '_mixin.scss';
+@import '_font.scss';
+@import '_colorvariable.scss';
+
+/* ========================
+    services css starts 
+=========================== */
+
+#services{
+    
+    background-color: #0b001b;
+
+    .main-item{
+        background: #5d00e7;
+        transform: translateY(-50%);
+        clip-path: polygon(0 7%, 100% 0%, 100% 100%, 0 95%);
+    }
+    .services-item{
+        // background: linear-gradient( to right, #9e4efc, #570dc8);
+
+        &.first-shadow{
+            box-shadow: 0 0 12px 0 #000000;
+        }
+
+        &.second-shadow{
+            box-shadow: -0px 0 12px -6px #000000, 8px 0 12px -6px rgba(0, 0, 0, 0.5);
+        }
+
+        h3{
+            font-family: $atonfont;
+            font-weight: 400;
+            font-size: 50px;
+            color:$orange;
+            padding-top: 25px;
+            padding-bottom: 20px;
+        }
+
+        h4{
+            font-family: $atonfont;
+            font-weight: 400;
+            font-size: 32px;
+            color: $light;
+        }
+
+        p{
+            font-family: $nunfont;
+            font-weight: 400;
+            font-size: 16px;
+            color: $light;
+            padding-top: 15px;
+            padding-bottom: 25px;
+        }
+    }
+}
+/* ========================
+    services css ends 
+=========================== */

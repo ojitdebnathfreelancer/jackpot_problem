@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+image {
+    vertical-align: middle;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+/* ==================
+    common css ends 
+======================= */
+
+@import '_nav.scss';
+@import '_banner.scss';
+@import '_serviecs.scss';
+@import '_gallery.scss';
+@import '_unlock.scss';
+@import '_priceing.scss';
+@import '_schedule.scss';
+

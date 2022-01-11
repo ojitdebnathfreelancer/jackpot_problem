@@ -1,0 +1,10 @@
+@mixin trans($times) {
+    transition: all linear $times;
+    -webkit-transition: all linear $times;
+    -moz-transition: all linear $times;
+    -ms-transition: all linear $times;
+    -o-transition: all linear $times;
+}
+/* ==================
+    mixin css ends
+====================*/

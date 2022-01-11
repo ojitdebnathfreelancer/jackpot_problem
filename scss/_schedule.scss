@@ -1,0 +1,65 @@
+@import '_mixin.scss';
+@import '_font.scss';
+@import '_colorvariable.scss';
+
+/* =========================
+    schedule css starts 
+========================== */
+.d-block{
+    display:block !important;
+}
+.d-border{
+    border: 1px solid $orange;
+}
+
+.mb{
+    margin-bottom: 25px;
+}
+
+#schedule {
+    background-color: #150035;
+    padding-bottom: 95px;
+
+    h4 {
+        font-family: $atonfont;
+        font-weight: 400;
+        font-size: 40px;
+        color: $orange;
+        padding-top: 100px;
+        padding-bottom: 70px;
+    }
+
+    .detail-item {
+        padding: 20px 30px;
+        margin-top: 20px;
+        li {
+            font-family: $nunfont;
+            font-weight: 400;
+            font-size: 20px;
+            color: $light;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .text {
+            font-family: $nunfont;
+            font-weight: 400;
+            font-size: 16px;
+            color: $light;
+
+            p {
+                padding-right: 60px;
+            }
+        }
+
+        .detail-item-border {
+            border: 1px solid $orange;
+        }
+    }
+}
+
+/* =========================
+    schedule css ends 
+========================== */

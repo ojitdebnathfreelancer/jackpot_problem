@@ -1,0 +1,78 @@
+@import '_mixin.scss';
+@import '_font.scss';
+@import '_colorvariable.scss';
+
+/* =====================
+   banner css starts 
+===================== */
+#banner {
+    background-color: $brand;
+    padding-top: 40px;
+    padding-bottom: 170px;
+
+    h1 {
+        color: $light;
+        font-family: $nunfont;
+        font-weight: 400;
+        font-size: 20px;
+        margin-top: 20px;
+        padding-left: 75px;
+    }
+
+    .seven {
+        h5 {
+            font-family: $atonfont;
+            font-weight: 400;
+            font-size: 331px;
+            background: linear-gradient(to bottom, #fcb100, #ff8001, #fcb100);
+            -webkit-background-clip: text;
+            color: transparent;
+            -webkit-text-stroke-color: #4d0148;
+            -webkit-text-stroke-width: 1px;
+            margin-top: -44px;
+            // text-shadow: 0px 0px 70px rgb(255 0 230);
+        }
+    }
+
+    .detail {
+        p {
+            color: $light;
+            margin-top: -20px;
+            padding: 0 65px;
+            line-height: 26px;
+        }
+    }
+
+    .btn {
+        a {
+            background: linear-gradient(to top, #570dc8, #9e4efc);
+            padding: 10px 25px;
+            font-family: $atonfont;
+            font-weight: 400;
+            font-size: 24px;
+            color: $light;
+            position: relative;
+            z-index: 1;
+            border-radius: 5px;
+            display: block;
+            margin-top: 10px;
+
+            &::before {
+                content: '';
+                width: 100%;
+                height: 7px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                background-color: rgba(0, 0, 0, 0.4);
+                border-bottom-left-radius: 2px;
+                border-bottom-right-radius: 2px;
+                z-index: -1;
+            }
+        }
+    }
+}
+
+/* =====================
+   banner css ends 
+===================== */

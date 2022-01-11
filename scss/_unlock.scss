@@ -1,0 +1,93 @@
+@import '_mixin.scss';
+@import '_font.scss';
+@import '_colorvariable.scss';
+
+/* ====================
+ unlock css starts 
+======================= */
+#unlock {
+    background-color: #150035;
+    padding-top: 100px;
+    padding-bottom: 170px;
+
+    .unlock-image {
+        position: relative;
+        z-index: 1;
+
+        .image-2 {
+            position: absolute;
+            top: 320px;
+            left: 0;
+            z-index: 2;
+        }
+
+        .image-3 {
+            position: absolute;
+            top: 415px;
+            left: 38px;
+            z-index: 3;
+        }
+    }
+
+    .unlock-details {
+        h3 {
+            font-family: $atonfont;
+            font-weight: 400;
+            font-size: 45px;
+            color: $orange;
+            margin-top: 80px;
+        }
+
+        p {
+            font-family: $nunfont;
+            font-weight: 400;
+            font-size: 16px;
+            color: $light;
+            line-height: 26px;
+
+            &.first-p {
+                margin-top: 70px;
+                margin-bottom: 40px !important;
+                padding-right: 55px;
+            }
+
+            &.second-p {
+                padding-right: 55px;
+            }
+        }
+
+        .unlock-button {
+
+            a {
+                background: linear-gradient(to top, #570dc8, #9e4efc);
+                padding: 10px 40px;
+                border-radius: 5px;
+                font-family: $atonfont;
+                font-weight: 400;
+                font-size: 24px;
+                color: $light;
+                margin-top: 60px;
+                display: inline-block;
+                position: relative;
+                z-index: 1;
+
+                &::after {
+                    content: '';
+                    width: 100%;
+                    height: 7px;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    background-color: rgba(0, 0, 0, 0.4);
+                    border-bottom-left-radius: 2px;
+                    border-bottom-right-radius: 2px;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+}
+
+/* ====================
+ unlock css ends 
+======================= */

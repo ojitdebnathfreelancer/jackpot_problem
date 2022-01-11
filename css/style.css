@@ -1,0 +1,603 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+image {
+  vertical-align: middle;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ==================
+    common css ends 
+======================= */
+/* ==================
+    mixin css ends
+====================*/
+/* ======================
+    font variable ends
+=========================*/
+/* ===================
+   color variable ends
+====================== */
+/* ==================
+    navbar css starts  
+======================= */
+#navbar {
+  background-color: #150035;
+}
+#navbar .navbar .navbar-nav {
+  margin-top: 70px !important;
+}
+#navbar .navbar .navbar-nav .nav-item {
+  margin: 0px 20px;
+}
+#navbar .navbar .navbar-nav .nav-item .nav-link {
+  color: #68499d;
+  transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+#navbar .navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #fb36d8;
+}
+#navbar .navbar .navbar-nav .nav-item .nav-link.active {
+  color: #fb36d8;
+}
+#navbar .navbar .signup a {
+  display: inline-block;
+  margin-top: 55px;
+  background: linear-gradient(to top, #570dc8, #9e4efc);
+  padding: 15px 35px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+}
+#navbar .navbar .signup a:first-of-type {
+  margin-right: 20px;
+}
+#navbar .navbar .signup a::before {
+  content: '';
+  width: 100%;
+  height: 7px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  z-index: -1;
+}
+#navbar .navbar .signup a:hover {
+  background: linear-gradient(to top, #a60084, #ff39dc);
+}
+
+/* ==================
+    navbar css ends  
+======================= */
+/* ==================
+    mixin css ends
+====================*/
+/* ======================
+    font variable ends
+=========================*/
+/* ===================
+   color variable ends
+====================== */
+/* =====================
+   banner css starts 
+===================== */
+#banner {
+  background-color: #150035;
+  padding-top: 40px;
+  padding-bottom: 170px;
+}
+#banner h1 {
+  color: #ffffff;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 20px;
+  padding-left: 75px;
+}
+#banner .seven h5 {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 331px;
+  background: linear-gradient(to bottom, #fcb100, #ff8001, #fcb100);
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-stroke-color: #4d0148;
+  -webkit-text-stroke-width: 1px;
+  margin-top: -44px;
+}
+#banner .detail p {
+  color: #ffffff;
+  margin-top: -20px;
+  padding: 0 65px;
+  line-height: 26px;
+}
+#banner .btn a {
+  background: linear-gradient(to top, #570dc8, #9e4efc);
+  padding: 10px 25px;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+  border-radius: 5px;
+  display: block;
+  margin-top: 10px;
+}
+#banner .btn a::before {
+  content: '';
+  width: 100%;
+  height: 7px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  z-index: -1;
+}
+
+/* =====================
+   banner css ends 
+===================== */
+/* ==================
+    mixin css ends
+====================*/
+/* ======================
+    font variable ends
+=========================*/
+/* ===================
+   color variable ends
+====================== */
+/* ========================
+    services css starts 
+=========================== */
+#services {
+  background-color: #0b001b;
+}
+#services .main-item {
+  background: #5d00e7;
+  transform: translateY(-50%);
+  clip-path: polygon(0 7%, 100% 0%, 100% 100%, 0 95%);
+}
+#services .services-item.first-shadow {
+  box-shadow: 0 0 12px 0 #000000;
+}
+#services .services-item.second-shadow {
+  box-shadow: 0px 0 12px -6px #000000, 8px 0 12px -6px rgba(0, 0, 0, 0.5);
+}
+#services .services-item h3 {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  color: #e28221;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+#services .services-item h4 {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: #ffffff;
+}
+#services .services-item p {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
+
+/* ========================
+    services css ends 
+=========================== */
+/* ==================
+    mixin css ends
+====================*/
+/* ======================
+    font variable ends
+=========================*/
+/* ===================
+   color variable ends
+====================== */
+/* ====================
+    gallery css starts
+======================= */
+#gallery {
+  background-color: #0b001b;
+  padding-bottom: 100px;
+}
+#gallery h2 {
+  color: #e28221;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+}
+#gallery .gallery-box {
+  margin-top: 55px;
+}
+#gallery .gallery-box .gal-item {
+  position: relative;
+}
+#gallery .gallery-box .gal-item:hover .gal-item-overlay {
+  transform: scale(1);
+}
+#gallery .gallery-box .gal-item .gal-item-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(21, 0, 53, 0.85);
+  transform: scale(0);
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+#gallery .gallery-box .gal-item .gal-item-overlay p {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #ffffff;
+}
+#gallery .gallery-box .gal-item .gal-item-overlay .button {
+  background: linear-gradient(to top, #570dc8, #9e4efc);
+  padding: 10px 35px;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  position: relative;
+  z-index: 1;
+  border-radius: 5px;
+  margin-top: 40px;
+}
+#gallery .gallery-box .gal-item .gal-item-overlay .button a {
+  color: #ffffff;
+}
+#gallery .gallery-box .gal-item .gal-item-overlay .button::after {
+  content: '';
+  width: 100%;
+  height: 7px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  z-index: -1;
+}
+
+/* ====================
+    gallery css ends
+======================= */
+/* ==================
+    mixin css ends
+====================*/
+/* ======================
+    font variable ends
+=========================*/
+/* ===================
+   color variable ends
+====================== */
+/* ====================
+ unlock css starts 
+======================= */
+#unlock {
+  background-color: #150035;
+  padding-top: 100px;
+  padding-bottom: 170px;
+}
+#unlock .unlock-image {
+  position: relative;
+  z-index: 1;
+}
+#unlock .unlock-image .image-2 {
+  position: absolute;
+  top: 320px;
+  left: 0;
+  z-index: 2;
+}
+#unlock .unlock-image .image-3 {
+  position: absolute;
+  top: 415px;
+  left: 38px;
+  z-index: 3;
+}
+#unlock .unlock-details h3 {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 45px;
+  color: #e28221;
+  margin-top: 80px;
+}
+#unlock .unlock-details p {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 26px;
+}
+#unlock .unlock-details p.first-p {
+  margin-top: 70px;
+  margin-bottom: 40px !important;
+  padding-right: 55px;
+}
+#unlock .unlock-details p.second-p {
+  padding-right: 55px;
+}
+#unlock .unlock-details .unlock-button a {
+  background: linear-gradient(to top, #570dc8, #9e4efc);
+  padding: 10px 40px;
+  border-radius: 5px;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #ffffff;
+  margin-top: 60px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+#unlock .unlock-details .unlock-button a::after {
+  content: '';
+  width: 100%;
+  height: 7px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  z-index: -1;
+}
+
+/* ====================
+ unlock css ends 
+======================= */
+/* ==================
+    mixin css ends
+====================*/
+/* ======================
+    font variable ends
+=========================*/
+/* ===================
+   color variable ends
+====================== */
+/* ========================
+    priceing css starts
+========================== */
+#priceing {
+  background-color: #0b001b;
+  padding-bottom: 110px;
+}
+#priceing .heading h3 {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  color: #e28221;
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+#priceing .price-item {
+  background: linear-gradient(to top, #570dc8, #9e4efc);
+  border-radius: 5px;
+  position: relative;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  transform: scaleY(0.9);
+}
+#priceing .price-item:hover {
+  transform: scaleY(1);
+}
+#priceing .price-item:hover .head {
+  display: block;
+  opacity: 1;
+}
+#priceing .price-item:hover .price-button a {
+  background: linear-gradient(to top, #a60084, #ff39dc);
+}
+#priceing .price-item .head {
+  background-color: #fb36d8;
+  border-radius: 5px;
+  opacity: 0;
+  transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+}
+#priceing .price-item .head h2 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+  padding: 20px 0;
+  position: relative;
+  z-index: 1;
+}
+#priceing .price-item .head h2::after {
+  content: '';
+  content: '';
+  width: 100%;
+  height: 7px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+#priceing .price-item h4 {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: #ffffff;
+  padding-top: 60px;
+  padding-bottom: 25px;
+  text-shadow: 0px 3px #000000;
+}
+#priceing .price-item h5 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  color: #ffffff;
+}
+#priceing .price-item p {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  padding-bottom: 30px;
+}
+#priceing .price-item ul {
+  border-top: 1px solid rgba(0, 0, 0, 0.4);
+}
+#priceing .price-item ul li {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: 20px;
+}
+#priceing .price-item .price-button a {
+  display: inline-block;
+  background: linear-gradient(to top, #570dc8, #9e4efc);
+  padding: 10px 40px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  top: 25px;
+  transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+}
+#priceing .price-item .price-button a::before {
+  content: '';
+  width: 100%;
+  height: 7px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  z-index: -1;
+}
+
+/* ========================
+    priceing css ends
+========================== */
+/* ==================
+    mixin css ends
+====================*/
+/* ======================
+    font variable ends
+=========================*/
+/* ===================
+   color variable ends
+====================== */
+/* =========================
+    schedule css starts 
+========================== */
+.d-block {
+  display: block !important;
+}
+
+.d-border {
+  border: 1px solid #e28221;
+}
+
+.mb {
+  margin-bottom: 25px;
+}
+
+#schedule {
+  background-color: #150035;
+  padding-bottom: 95px;
+}
+#schedule h4 {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: #e28221;
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+#schedule .detail-item {
+  padding: 20px 30px;
+  margin-top: 20px;
+}
+#schedule .detail-item li {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+#schedule .detail-item .text {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+}
+#schedule .detail-item .text p {
+  padding-right: 60px;
+}
+#schedule .detail-item .detail-item-border {
+  border: 1px solid #e28221;
+}
+
+/* =========================
+    schedule css ends 
+========================== */

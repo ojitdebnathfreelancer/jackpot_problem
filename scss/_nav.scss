@@ -1,0 +1,82 @@
+@import '_mixin.scss';
+@import '_font.scss';
+@import '_colorvariable.scss';
+/* ==================
+    navbar css starts  
+======================= */
+#navbar {
+    background-color: $brand;
+
+    .navbar {
+
+        .navbar-nav {
+            margin-top: 70px !important;
+
+            .nav-item {
+                margin: 0px 20px;
+
+                .nav-link {
+                    color: #68499d;
+                    @include trans(0.4s);
+                    font-family: $nunfont;
+                    font-weight: 700;
+                    font-size: 20px;
+
+                    &:hover {
+                        color: $hovcol;
+                    }
+
+                    &.active{
+                        color: $hovcol;
+                    }
+                }
+            }
+        }
+
+        .signup {
+            a {
+                display: inline-block;
+                margin-top: 55px;
+                background:linear-gradient(to top, #570dc8,#9e4efc);
+                padding: 15px 35px;
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+                font-family: $atonfont;
+                font-weight: 400;
+                font-size: 20px;
+                color:#fff;
+                position: relative;
+                z-index: 1;
+                box-shadow: -0 0 5px rgba(0, 0, 0, 0.8);
+                @include trans(0.4s);
+                &:first-of-type{
+                    margin-right:20px;
+                }
+                &::before{
+                    content: '';
+                    width: 100%;
+                    height: 7px;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    background-color: rgba(0, 0, 0, 0.4);
+                    border-bottom-left-radius: 2px;
+                    border-bottom-right-radius: 2px;
+                    z-index: -1;
+                }
+
+                &:hover{
+                    background:linear-gradient(to top, #a60084,#ff39dc);
+                }
+            }
+        }
+    }
+}
+/* ==================
+    navbar css ends  
+======================= */
+
+

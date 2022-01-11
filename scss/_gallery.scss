@@ -1,0 +1,82 @@
+@import '_mixin.scss';
+@import '_font.scss';
+@import '_colorvariable.scss';
+
+/* ====================
+    gallery css starts
+======================= */
+#gallery {
+    background-color: #0b001b;
+    padding-bottom: 100px;
+
+    h2 {
+        color: $orange;
+        font-family: $atonfont;
+        font-weight: 400;
+        font-size: 48px;
+    }
+
+    .gallery-box {
+        margin-top: 55px;
+
+        .gal-item {
+            position: relative;
+
+            &:hover{
+                .gal-item-overlay{
+                    transform: scale(1);
+                }
+            }
+
+            .gal-item-overlay {
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(21, 0, 53, 0.85);
+                transform: scale(0);
+                @include trans(0.3s);
+
+                p {
+                    font-family: $atonfont;
+                    font-weight: 400;
+                    font-size: 24px;
+                    color: $light;
+                }
+
+                .button{
+                    background: linear-gradient(to top, #570dc8, #9e4efc);
+                    padding: 10px 35px;
+                    font-family: $atonfont;
+                    font-weight: 400;
+                    font-size: 24px;
+                    position: relative;
+                    z-index: 1;
+                    border-radius: 5px;
+                    margin-top: 40px;
+
+                    a {
+                        color: $light;
+                    }
+
+                    &::after {
+                        content: '';
+                        width: 100%;
+                        height: 7px;
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        background-color: rgba(0, 0, 0, 0.4);
+                        border-bottom-left-radius: 2px;
+                        border-bottom-right-radius: 2px;
+                        z-index: -1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ====================
+    gallery css ends
+======================= */

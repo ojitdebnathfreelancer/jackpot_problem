@@ -1,0 +1,155 @@
+@import '_mixin.scss';
+@import '_font.scss';
+@import '_colorvariable.scss';
+
+/* ========================
+    priceing css starts
+========================== */
+#priceing {
+    background-color: #0b001b;
+    padding-bottom: 110px;
+
+    .heading {
+
+        h3 {
+            font-family: $atonfont;
+            font-weight: 400;
+            font-size: 48px;
+            color: $orange;
+            padding-top: 100px;
+            padding-bottom: 60px;
+        }
+    }
+
+    .price-item{
+        background: linear-gradient(to top, #570dc8, #9e4efc);
+        border-radius: 5px;
+        position: relative;
+        @include trans(0.3s);
+        transform: scaleY(0.90);
+
+        &:hover {
+
+            transform: scaleY(1);
+
+            .head {
+                display: block;
+                opacity: 1;
+            }
+
+            .price-button{
+                
+                a{
+                    background: linear-gradient(to top, #a60084, #ff39dc);
+                }
+            }
+        }
+
+        .head {
+            background-color: $hovcol;
+            border-radius: 5px;
+            opacity: 0;
+            @include trans(0.4s);
+
+            h2 {
+                font-family: $nunfont;
+                font-weight: 600;
+                font-size: 20px;
+                color: $light;
+                padding: 20px 0;
+                position: relative;
+                z-index: 1;
+
+                &::after {
+                    content: '';
+                    content: '';
+                    width: 100%;
+                    height: 7px;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    background-color: rgba(0, 0, 0, 0.4);
+                    z-index: -1;
+                    border-bottom-left-radius: 2px;
+                    border-bottom-right-radius: 2px;
+                }
+            }
+        }
+
+        h4 {
+            font-family: $atonfont;
+            font-weight: 400;
+            font-size: 32px;
+            color: $light;
+            padding-top: 60px;
+            padding-bottom: 25px;
+            text-shadow: 0px 3px #000000;
+        }
+
+        h5 {
+            font-family: $nunfont;
+            font-weight: 700;
+            font-size: 50px;
+            color: $light;
+        }
+
+        p {
+            font-family: $nunfont;
+            font-weight: 400;
+            font-size: 14px;
+            color: $light;
+            padding-bottom: 30px;
+        }
+
+        ul {
+            border-top: 1px solid rgba(0, 0, 0, 0.4);
+
+            li {
+                font-family: $nunfont;
+                font-weight: 600;
+                font-size: 16px;
+                color: $light;
+                margin-top: 20px;
+            }
+        }
+
+        .price-button{
+
+            a {
+                display: inline-block;
+                background: linear-gradient(to top, #570dc8, #9e4efc);
+                padding: 10px 40px;
+                border-radius: 5px;
+                -webkit-border-radius:5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius:5px;
+                font-family: "Anton", sans-serif;
+                font-weight: 400;
+                font-size: 20px;
+                color: #fff;
+                position: relative;
+                z-index: 1;
+                top: 25px;
+                @include trans(0.4s);
+
+                &::before {
+                    content: '';
+                    width: 100%;
+                    height: 7px;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    background-color: rgba(0, 0, 0, 0.4);
+                    border-bottom-left-radius: 2px;
+                    border-bottom-right-radius: 2px;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+}
+
+/* ========================
+    priceing css ends
+========================== */
